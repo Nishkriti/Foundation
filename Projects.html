@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nishkrit-First Project</title>
+  <link rel="icon" type="image/x-icon" href="Logo.png">
+<!--<link rel="stylesheet" type="text/css" href="mobile-styles.css" />-->
+  <script src="scripts.js"></script>
+<style>
+  body{
+overflow-x:hidden;
+background-color:#d9fcf6;
+top:-2%;
+left:-2%;
+}
+
+html,body{margin:0;padding:0;height:100%;}
+
+a{
+text-decoration:none;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+ .topheader{
+width:100%;
+left:0%;
+top:0%;
+object-fit: cover;
+     margin-bottom:-2%;
+}
+
+.navbar {
+  
+  background-color:#c7f8ff;
+  width: 100%;
+  display: inline-flex;
+  margin-top: 2%; 
+  margin-bottom: 0%;
+}
+
+.navbar a {
+  width: 50%;
+  text-align:center;
+  padding: 12px;
+  font-family: "Century Gothic", 'Lato', sans-serif;
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  background-color:#c7f8ff;
+  border-right: rgba(0, 35, 122, 0.5);
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #00ddff;
+  transition:0.3s;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.dropdown-menu.open {
+  display: block;
+}
+
+nav {
+  
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: -2% auto;
+  padding:  0;
+  width:100%;
+
+}
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background-color:#c2f7ff;
+    padding: 0;
+    margin: 0;
+}
+
+
+nav ul li {
+  display: block;
+  margin: 0;
+}
+
+nav ul li a {
+  padding: 12px;
+  font-family: "Century Gothic", 'Lato', sans-serif;
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  background-color:#c7f8ff;
+  
+   
+}
+
+nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #00ddff;
+  transition:0.3s;
+}
+
+.headlines{
+text-align:center;
+font-size:24px;
+color:rgba(0, 35, 122, 0.7);
+font-family: "Century Gothic", 'Lato', sans-serif;
+font-weight:bold;
+    margin: 10px 0;
+}
+
+
+.lastnav{
+margin-bottom:4%;
+}
+
+
+
+.container{
+margin-left:3%;
+background-color:#f2fff6;
+width:94.5%;
+
+border-radius:30px;
+background-image: url(puppy.gif);
+background-position: center;
+background-repeat:no-repeat;
+background-size: 300px 250px;
+}
+
+.data{
+margin-left:3%;
+background-color:#f2fff6;
+width:94.5%;
+border-radius:30px;
+background: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(232,255,245,1) 0%, rgba(232,255,245,0.4042787114845938) 0%);
+color:#445673;
+font-family:papyrus;
+font-weight:bold;
+font-size:100%;
+text-indent: 20%;
+}
+
+.end{
+text-align: center;
+font-size: 12px;
+font-color: rgb(160, 160, 160);
+font-family:Courier New;
+color:#8f4300;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+    
+    .pc{
+        display: none;
+    }
+    
+}
+
+/* Styles for devices with a minimum width of 1024px */
+@media (min-width: 1024px) {
+   nav {
+  
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: -2% auto;
+  padding: 12px 0;
+  width:100%;
+  
+}
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background-color:#c2f7ff;
+}
+
+nav ul li {
+  display: inline-block;
+  
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family: "Century Gothic", 'Lato', sans-serif;
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 22px;
+  text-decoration: none;
+  display: block;
+  background-color:#c7f8ff;
+  margin-right:-1px;
+   
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: #00ddff;
+  transition:0.7s;
+}
+
+
+
+.topheader{
+width:100%;
+height:40%;
+left:0%;
+top:0%;
+
+object-fit: cover;
+}
+
+.headlines{
+text-align:center;
+font-size:300%;
+color:rgba(0, 35, 122, 0.7);
+font-family: "Century Gothic", 'Lato', sans-serif;
+font-weight:bold;
+}
+
+.data{
+margin-left:3%;
+background-color:#f2fff6;
+width:94.5%;
+height:1400px;
+border-radius:30px;
+background: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(232,255,245,1) 0%, rgba(232,255,245,0.4042787114845938) 0%);
+color:#445673;
+font-family:papyrus;
+font-weight:bold;
+font-size:170%;
+text-indent: 20%;
+}
+
+.container{
+margin-left:3%;
+background-color:#f2fff6;
+width:94.5%;
+border-radius:30px;
+background-image: url(puppy.gif);
+background-position: center;
+background-repeat:no-repeat;
+background-size: 600px 450px;
+}
+
+
+
+.end{
+
+font-size: 15px;
+font-color: rgb(160, 160, 160);
+font-family:Courier New;
+color:#8f4300;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+    
+    .mobile{
+    display: none;
+    
+}
+    
+    
+    
+    
+    
+    
+    
+</style>
+
+</head>
+
+
+<body>
+<img class="topheader" id = "banner" src="Header.png">  </img>
+
+<section class="et-hero-tabs pc">
+
+    
+    <nav id = "navbar">
+  <ul>
+    
+    <li>
+       <a class="tab" href="Unfinished.html">HOME</a>
+    </li>
+    <li>
+      <a class="tab" href="Projects.html">OUR PROJECTS</a>
+    </li>
+    <li>
+     <a class="tab" href="Unfinished.html">NEWS</a>
+    </li>
+    <li>
+       <a class="tab" href="Unfinished.html">ADOPT A PET</a>
+    </li>
+    <li>
+      <a class="tab" href="Unfinished.html">CONTACT US</a>
+    </li>
+    <li>
+      <a class="tab" href="Unfinished.html">SUPPORT US</a>
+    </li>
+  </ul>
+</nav>
+   
+    </section>
+
+ <section class="et-hero-tabs mobile">
+   
+    
+  <nav id = "navbar">
+
+  <div class = "navbar">
+    
+    
+    <a class = "nav-button" href="Unfinished.html">HOME</a>
+    <a class = "menu-button">MORE</a>
+
+  </div>
+
+  <ul class = "dropdown-menu" id = "dropdownMenu">   
+    <li>
+      <a class="tab" href="Projects.html">OUR PROJECTS</a>
+    </li>
+    <li>
+     <a class="tab" href="Unfinished.html">NEWS</a>
+    </li>
+    <li>
+       <a class="tab" href="Unfinished.html">ADOPT A PET</a>
+    </li>
+    <li>
+      <a class="tab" href="Unfinished.html">CONTACT US</a>
+    </li>
+    <li>
+      <a class="tab lastnav" href="Unfinished.html">SUPPORT US</a>
+    </li>
+  </ul>
+</nav>
+   
+    
+   </section>
+
+  <!-- Main -->
+ 
+<h1 class="headlines">The Animal Feeding Project</h1>
+<div class="container">
+<p class="data">
+<br>
+                   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+   Nishkriti Foundation is a nonprofit animal welfare organization based in Bangladesh, a country 
+   ridden with suffering animals on he streets, fighting disease, poor hygiene and starvation. With the goal of helping 
+   as many animals on the streets as possible, our mission is to raise awareness about the difficult lives of cats and
+   dogs on the streets, get people to see and learn about their heart-breaking state of living, and chime in to help these 
+   animals find shelter, food and other necessities. We plan to use charity donations from fundraisers and livestreams (in 
+   the future) to run animal welfare projects throughout our journey, from feeding to helping adopt from the streets, with 
+   a final destination of opening a fully standardized animal shelter. 
+  <br>
+<br>
+               &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp       
+   This dream can only be achieved through the help of people’s kindness and generosity as our very 
+   first project is to feed a number of cats and dogs in one region on one street regularly funded by money raised 
+   through a fundraiser that will remain open the entire month before. At the end of the month, we will reveal how much 
+   money was raised and how many animals it can feed. Then we will decide, using the survey on the post, to decide which 
+   region to start our project. So please help us out by filling out the survey to tell us what area you think will benefit 
+   most from our project. Then we will use the money to feed as many of cats and dogs in a certain region as we can 
+   afford through it, twice a day, for the entire next month. All of the feeding will be livestreamed for people to watch 
+   and donate to and the fundraisers will reopen for next month’s feeding. This will be repeated every month and the 
+   same animals on the same area will be fed and featured on the streams. The higher the donation money reaches at the 
+   end of month, the more we will be able to add a new animal to the feeding roster. All the animals on the streams will be 
+   up for adoption and assistance with adoption process and information on medical support such as vaccination and 
+   veterinary offices will be offered. So if the money is higher than last month by enough to feed another animal, we will 
+   feed one more animal. Over time as this project grows with increasing number of animals we can feed, we will expand 
+   the regions where we can feed. Any extra money that is not enough to feed a new animal for the month but still beyond 
+   the bar will either be stored for future projects in a separate fundraiser or spent on advertising the fundraiser itself, 
+   all done visible to the audience. 
+<br>
+<br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    
+   As this project grows, with enough support, more amazing projects to help these animals will be 
+   revealed. We plan to keep running projects like this until every cat and dog on the streets of Bangladesh is either 
+   adopted or fostered but this is only possible if we get support from an audience large enough to fund all our plans to 
+   help these helpless animals to a better life. So share this post with your friends and family, fill in the survey and 
+   follow the page to be notified when a project begins and help out if you can. Remember, anything you can give means 
+   a LOT to a hungry little cat or dog sniffing around for food near trashcans and roadsides. 
+<br>&nbsp
+
+</p>
+</div>
+
+
+    
+    
+    
+    
+    
+<br><br>
+    
+    <hr class="end pc">
+<pre class = "end pc">
+
+
+
+
+            <a>Our Email: nishkritifoundation22@gmail.com</a>                              <a>Our BKash no: +8801708905024</a>
+            <a>Our Contact No: 01722887641</a>                                             <a>Instragram: https://instagram.com/nishkritifoundation?igshid=MmIzYWVlNDQ5Yg==</a>
+
+
+
+
+
+
+
+</pre>
+    
+    
+    
+    
+<hr class="end mobile">
+    
+<div class = "end mobile">
+
+
+
+
+    <a>Our Email: nishkritifoundation22@gmail.com</a> <br>
+    <a>Our BKash no: +8801708905024</a> <br>
+    <a>Our Contact No: 01722887641</a> <br>                                             
+    <a>Instragram: https://instagram.com/nishkritifoundation?igshid=MmIzYWVlNDQ5Yg==</a>
+
+
+
+
+
+
+
+</div>
+    
+    
+    
+
+<script>
+  const menuButton = document.querySelector(".menu-button");
+  const dropdownMenu = document.getElementById("dropdownMenu");
+
+  menuButton.addEventListener("click", () => {
+  dropdownMenu.classList.toggle("open");
+});   
+
+const navbar = document.getElementById("navbar");
+const banner = document.getElementById("banner");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset >= banner.offsetHeight) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+});
+</script>
+
+</body>
+</html>
