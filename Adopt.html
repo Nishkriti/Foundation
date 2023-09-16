@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nishkrit-First Project</title>
+  <link rel="icon" type="image/x-icon" href="Logo.png">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="scripts.js"></script>
+<style>
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x:hidden;
+     background-color:#f1dce2;
+}
+
+
+@font-face{
+        font-family: nav;
+  src: url(nav2.ttf);
+    }
+
+ 
+@font-face{
+        font-family: filter;
+  src: url(filter.ttf);
+    }
+
+@font-face{
+        font-family: end;
+  src: url(butt.otf);
+    }
+    
+    
+    @font-face{
+        font-family: toptext;
+  src: url(header.ttf);
+    }
+  
+
+.end{
+
+font-size: 15px;
+font-color: rgb(160, 160, 160);
+font-family:Courier New;
+color:#8f4300;
+}
+
+@media (max-width: 768px) {
+    
+         
+    .parallax {
+  background-image: url('adoption-logo.png'); /* Replace with your image */
+  background-attachment: fixed;
+  background-position: 15% 10%;
+  background-repeat: no-repeat;
+  background-size: 100vw 30vh;
+  height: 38vh; /* Adjust this to your needs */
+  display: flex;
+  justify-content: center;
+  align-items: bottom;
+}
+
+.parallax-content {
+  text-align: center;
+  color: #fff;
+  font-size:200%;
+    display:none;
+}
+    
+    
+    
+    
+  .topheader{
+width:100%;
+left:0%;
+top:0%;
+object-fit: cover;
+      margin-bottom:-2%;
+}
+
+.et-hero-tabs .mobile {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+     background-color:#fceded;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+   background-color:#fceded;
+  width: 100%;
+  display: inline-flex;
+  margin-top: 0%; 
+  margin-bottom: 0%;
+}
+
+.navbar a {
+  width: 50%;
+  text-align:center;
+  padding: 2.3vh;
+  font-family: nav;
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+   background-color:#fceded;
+  border-right: rgba(0, 35, 122, 0.5);
+}
+
+.navbar a:hover {
+  background-color: #fcd4e0;
+  color: #df6cad;
+  transition:0.7s;
+  
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.dropdown-menu.open {
+  display: block;
+    margin-top:6%;
+}
+
+nav {
+  
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: -2% auto;
+  padding:  0;
+  width:100%;
+
+}
+
+nav ul {
+  text-align: center;
+   background-color:#fceded;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+ background-color:#fceded;
+    padding: 0;
+    margin: 0;
+}
+
+
+nav ul li {
+  display: block;
+  margin: 0;
+}
+
+nav ul li a {
+  padding: 12px;
+  font-family: "Century Gothic", 'Lato', sans-serif;
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+   background-color:#fceded;
+   font-family: nav;
+   
+}
+
+nav ul li a:hover {
+   background-color:#fceded;
+  color: #00ddff;
+  transition:0.3s;
+}
+
+.headlines{
+text-align:center;
+font-size:24px;
+color:rgba(0, 35, 122, 0.7);
+font-family: "Century Gothic", 'Lato', sans-serif;
+font-weight:bold;
+    margin: 10px 0;
+}
+
+
+.lastnav{
+margin-bottom:4%;
+}
+
+      @font-face{
+        font-family: toptext;
+  src: url(header.ttf);
+    }
+  
+    
+    
+.headlines{
+text-align:center;
+font-size:24px;
+color:#e482a8;
+    letter-spacing: 4px;
+font-family: toptext;
+font-weight:bold;
+    margin: 10px 0;
+}
+
+
+.lastnav{
+margin-bottom:4%;
+}
+
+
+    .cat{
+        display:inline;
+    }
+    
+  /* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+    margin-left:50px;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 80px;
+  background-color: #eee;
+  border-radius: 10%;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  text-align:center;
+   font-family: toptext;
+    font-size:60%;
+    color:#Bb6a8a;
+     padding-top:0% ;
+     
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #f0f1ff;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+ background-color: #dce0fa;
+}
+
+    .allshow input:checked + .cat {
+  
+}
+
+    .catshow input:checked + .dog {
+  display:none;
+}
+    
+    .dogshow input:checked + .cat {
+  display:none;
+}
+    
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: none;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+   
+}
+    
+   
+    .buttonbar{
+        margin-left:5%;
+        margin-bottom:10px;
+        display: flex;
+    }
+    
+
+    
+    
+    .photoframe {
+ 
+  width: 22vw;
+        height:auto;
+  float: left;
+  margin: 10px;
+  padding: 10px 10px 0px 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px black; /* dark orange */
+        transition: transform 0.7s;
+}
+.photoframe img {
+  width:100%;
+    height:8vh;
+}
+    
+    
+    .photoframe:hover{
+        transform:rotate(2deg) scale(1.15);
+     
+    }
+    
+    .animals{
+        margin-left:0vw;
+        width:100%;
+    }
+    
+    
+    @font-face{
+        font-family:names;
+  src: url(card1.otf);
+    }
+    
+    .card{
+        text-decoration: none;
+        padding-top:6px;
+        margin-top:-5px;
+        text-align: center;
+        font-family: names;
+        color:black;
+        font-size:80%;
+        margin-bottom:2px;
+    }
+
+    
+    
+    
+
+
+
+.end{
+    text-decoration: none;
+width:100%;
+font-size: 15px;
+font-family:end;
+color:#8f4300;
+margin-left:0%;
+ display: block;
+    
+}
+
+    .link{
+         text-decoration: none;
+        text-align: center;
+font-size: 12px;
+font-family:end;
+color:#8f4300;
+    }
+    
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+    
+
+    
+
+.end{
+text-align: center;
+font-size: 12px;
+font-family:end;
+color:#8f4300;
+    
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+    
+    .pc{
+        display: none;
+    }
+    
+    }
+/* Styles for devices with a minimum width of 1024px */
+ 
+    
+    
+    
+    
+@media (min-width: 1024px) {
+    
+    
+       
+    .parallax {
+  background-image: url('adopt-pc.jpg'); /* Replace with your image */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  height: 120vh; /* Adjust this to your needs */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-content {
+  text-align: center;
+  color: #fff;
+  font-size:200%;
+   
+}
+    
+
+    
+    
+    
+.navbar {
+  
+  background-color:#fceded;
+  width: 100%;
+  display: inline-flex;
+  margin-top: 2%; 
+  margin-bottom: 0%;
+}
+
+    
+   nav {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: -2% auto;
+       margin-left:-2%;
+       margin-top:-2%;
+  padding: 12px 0;
+  width:104vw;
+  
+}
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background-color:#fceded;
+    padding-bottom:1px;
+}
+
+nav ul li {
+  display: inline-block;
+  
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family: nav;
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 22px;
+  text-decoration: none;
+  display: block;
+  background-color:#fff2f2;
+  margin-right:-1px;
+   
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background-color: #fcd4e0;
+  color: #df6cad;
+  transition:0.7s;
+}
+
+
+
+.topheader{
+width:100%;
+height:40%;
+left:0%;
+top:0%;
+
+object-fit: cover;
+}
+    
+    
+      @font-face{
+        font-family: toptext;
+  src: url(header.ttf);
+    }
+  
+    
+
+
+
+.cat{
+        display:inline;
+    }
+    
+  /* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+    margin-left:80px;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 100px;
+  background-color: #fafaff;
+  border-radius: 10%;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  text-align:center;
+    font-family: toptext;
+    font-size:90%;
+    color:#Bb6a8a;
+     padding-top:5% ;
+  
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #f0f1ff;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #dce0fa;
+}
+
+    .allshow input:checked + .cat {
+  
+}
+
+    .catshow input:checked + .dog {
+  display:none;
+}
+    
+    .dogshow input:checked + .cat {
+  display:none;
+}
+    
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: none;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+   
+}
+    
+   
+    .buttonbar{
+        margin-left:10%;
+        margin-bottom:30px;
+        display: flex;
+    }
+    
+
+    
+    
+    .photoframe {
+ 
+  width: 24%;
+        height:auto;
+  float: left;
+  margin: 25px;
+  padding: 15px 15px 0px 15px;
+  background: white;
+
+  border-radius: 0px;
+  box-shadow: 3px 3px 10px black; /* dark orange */
+        transition: transform 0.7s, background 1.7s;
+        
+}
+.photoframe img {
+  width:100%;
+    height:35vh;
+}
+    
+    
+    .photoframe:hover{
+        transform:rotate(2deg) scale(1.15);
+     
+    }
+    
+    .animals{
+        margin-left:3%;
+        width:110%;
+    }
+    
+    
+    @font-face{
+        font-family:names;
+  src: url(card1.otf);
+    }
+    
+    .card{
+        text-decoration: none;
+        padding-top:6px;
+        margin-top:0;
+        text-align: center;
+        font-family: names;
+        color:black;
+        font-size:210%;
+        font-weight:600;
+         margin-bottom: 2%;
+    }
+
+
+.headlines{
+text-align:center;
+font-size:300%;
+color:#e482a8;
+    letter-spacing: 4px;
+font-family: toptext;
+font-weight:bold;
+}
+
+.end{
+width:100%;
+font-size: 15px;
+color: rgb(160, 160, 160);
+font-family:end;
+color:#8f4300;
+margin-left:0%;
+ 
+}
+
+     .link{
+         text-decoration: none;
+         font-size: 15px;
+color: rgb(160, 160, 160);
+font-family:end;
+color:#8f4300;
+    }
+    
+    
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+       
+}
+    
+    .mobile{
+    display: none;
+    
+}
+    
+    
+  
+}    
+    
+
+
+</style>
+</head>
+
+
+<body>
+    
+    <section class="et-hero-tabs pc">
+   
+    
+      <nav id = "navbar">
+    <ul>
+      
+      <li>
+         <a class="tab" href="Unfinished.html">HOME</a>
+      </li>
+      <li>
+        <a class="tab" href="index.html">OUR PROJECTS</a>
+      </li>
+      <li>
+       <a class="tab" href="Unfinished.html">NEWS</a>
+      </li>
+      <li>
+         <a class="tab" href="Adopt.html">ADOPT A PET</a>
+      </li>
+      <li>
+        <a class="tab" href="Unfinished.html">CONTACT US</a>
+      </li>
+      <li>
+        <a class="tab" href="Unfinished.html">SUPPORT US</a>
+      </li>
+    </ul>
+  </nav>
+  
+  </section> 
+     
+  <section class="et-hero-tabs mobile">
+     
+      
+    <nav id = "navbar">
+  
+    <div class = "navbar">
+      
+      
+      <a class = "nav-button" href="Unfinished.html">HOME</a>
+      <a class = "menu-button">MORE</a>
+  
+    </div>
+  
+    <ul class = "dropdown-menu" id = "dropdownMenu">   
+      <li>
+        <a class="tab" href="index.html">OUR PROJECTS</a>
+      </li>
+      <li>
+       <a class="tab" href="Unfinished.html">NEWS</a>
+      </li>
+      <li>
+         <a class="tab" href="Adopt.html">ADOPT A PET</a>
+      </li>
+      <li>
+        <a class="tab" href="Unfinished.html">CONTACT US</a>
+      </li>
+      <li>
+        <a class="tab lastnav" href="Unfinished.html">SUPPORT US</a>
+      </li>
+    </ul>
+  </nav>
+     
+      
+     </section>
+    
+    
+<div class="parallax">
+    
+    
+    <div class="parallax-content">
+      
+      <p>Scroll down to Read</p>
+    </div>
+  </div>
+  
+  <div class="content">
+        
+<div class="big-container">
+    
+    <h1 class="headlines">PICK A RESCUE OF YOUR CHOICE</h1>
+     
+     <div class="buttonbar">
+
+ <label class="container allshow">&nbsp
+  <input type="radio" checked="checked" name="radio">
+  <span class="checkmark">ALL</span>
+</label>
+<label class="container catshow">&nbsp
+  <input type="radio" name="radio">
+  <span class="checkmark">CAT</span>
+</label>
+<label class="container dogshow">&nbsp
+  <input type="radio" name="radio">
+  <span class="checkmark">DOG</span>
+</label>
+         
+     </div>
+     
+      
+     
+     
+     
+     <div class="animals">
+         
+         
+     <div class="photoframe adult cat">
+  <a href="adoptpage1.html" style="text-decoration: none;">
+    <img src="3 cats.png"  alt="Image in the Frame" />
+       <h1 class="card">3 Kittens</h1>
+  </a>
+</div>
+         
+         
+
+
+         
+     </div>
+        
+      </div>
+      
+      
+     
+     </div>
+
+
+<br><br>
+<hr class="end">
+<pre class = "end pc">
+
+                                          <a>Our Email: nishkritifoundation22@gmail.com</a>                                                             <a>Our BKash no: +8801708905024</a>
+                                          <a>Our Contact No: 01722887641</a>                                                                                    <a class="link" href="https://www.instagram.com/nishkritifoundation/">Instagram: https://www.instagram.com/nishkritifoundation/</a>
+  
+  </div>
+  
+  
+  
+  
+  
+  </pre>
+  
+  <div class = "end mobile">
+  
+  
+  
+  
+    <a>Our Email: nishkritifoundation22@gmail.com</a> <br>
+    <a>Our BKash no: +8801708905024</a> <br>
+    <a>Our Contact No: 01722887641</a> <br>                                             
+     <a class="link" href="https://www.instagram.com/nishkritifoundation/">Instagram: https://www.instagram.com/nishkritifoundation/</a>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+
+
+
+  
+
+
+
+<script>
+      const menuButton = document.querySelector(".menu-button");
+  const dropdownMenu = document.getElementById("dropdownMenu");
+
+  menuButton.addEventListener("click", () => {
+  dropdownMenu.classList.toggle("open");
+});   
+
+
+const navbar = document.getElementById("navbar");
+const banner = document.getElementById("banner");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset >= banner.offsetHeight) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+});
+    
+    
+    
+    
+    
+    
+    
+    
+      document.addEventListener("DOMContentLoaded", function () {
+    var allShowRadio = document.querySelector('.allshow input[name="radio"]');
+    var catShowRadio = document.querySelector('.catshow input[name="radio"]');
+    var dogShowRadio = document.querySelector('.dogshow input[name="radio"]');
+    
+    var catImages = document.querySelectorAll('.cat');
+    var dogImages = document.querySelectorAll('.dog');
+    
+    function updateImageVisibility() {
+        if (allShowRadio.checked) {
+            catImages.forEach(function (image) {
+                image.style.display = 'inline-block';
+            });
+            dogImages.forEach(function (image) {
+                image.style.display = 'inline-block';
+            });
+        } else if (catShowRadio.checked) {
+            catImages.forEach(function (image) {
+                image.style.display = 'inline-block';
+            });
+            dogImages.forEach(function (image) {
+                image.style.display = 'none';
+            });
+        } else if (dogShowRadio.checked) {
+            catImages.forEach(function (image) {
+                image.style.display = 'none';
+            });
+            dogImages.forEach(function (image) {
+                image.style.display = 'inline-block';
+            });
+        }
+    }
+    
+    allShowRadio.addEventListener('change', updateImageVisibility);
+    catShowRadio.addEventListener('change', updateImageVisibility);
+    dogShowRadio.addEventListener('change', updateImageVisibility);
+    
+    // Initialize image visibility based on initial radio button state
+    updateImageVisibility();
+});
+    
+    
+    
+    
+    </script>
+
+    
+    
+    
+    
+</body>
+</html>
+
+
+

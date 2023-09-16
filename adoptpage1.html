@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nishkrit-First Project</title>
+  <link rel="icon" type="image/x-icon" href="Logo.png">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="scripts.js"></script>
+<style>
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x:hidden;
+     background-color:#f1dce2;
+}
+
+
+@font-face{
+        font-family: nav;
+  src: url(nav2.ttf);
+    }
+
+    @font-face{
+        font-family: nav3;
+  src: url(nav6.otf);
+    }
+    
+    
+ 
+@font-face{
+        font-family: filter;
+  src: url(filter.ttf);
+    }
+
+@font-face{
+        font-family: end;
+  src: url(butt.otf);
+    }
+    
+    
+    @font-face{
+        font-family: toptext;
+  src: url(header.ttf);
+    }
+  
+
+.end{
+
+font-size: 15px;
+font-color: rgb(160, 160, 160);
+font-family:Courier New;
+color:#8f4300;
+}
+
+@media (max-width: 768px) {
+    
+         
+    .parallax {
+  background-image: url('adoption-logo.png'); /* Replace with your image */
+  background-attachment: fixed;
+  background-position: 15% 10%;
+  background-repeat: no-repeat;
+  background-size: 100vw 30vh;
+  height: 38vh; /* Adjust this to your needs */
+  display: flex;
+  justify-content: center;
+  align-items: bottom;
+}
+
+.parallax-content {
+  text-align: center;
+  color: #fff;
+  font-size:200%;
+    display:none;
+}
+    
+    
+    
+    
+  .topheader{
+width:100%;
+left:0%;
+top:0%;
+object-fit: cover;
+      margin-bottom:-2%;
+}
+
+.et-hero-tabs .mobile {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+     background-color:#fceded;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+   background-color:#fceded;
+  width: 100%;
+  display: inline-flex;
+  margin-top: 0%; 
+  margin-bottom: 0%;
+}
+
+.navbar a {
+  width: 50%;
+  text-align:center;
+  padding: 2.3vh;
+  font-family: nav;
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+   background-color:#fceded;
+  border-right: rgba(0, 35, 122, 0.5);
+}
+
+.navbar a:hover {
+  background-color: #fcd4e0;
+  color: #df6cad;
+  transition:0.7s;
+  
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.dropdown-menu.open {
+  display: block;
+    margin-top:6%;
+}
+
+nav {
+  
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: -2% auto;
+  padding:  0;
+  width:100%;
+
+}
+
+nav ul {
+  text-align: center;
+   background-color:#fceded;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+ background-color:#fceded;
+    padding: 0;
+    margin: 0;
+}
+
+
+nav ul li {
+  display: block;
+  margin: 0;
+}
+
+nav ul li a {
+  padding: 12px;
+  font-family: "Century Gothic", 'Lato', sans-serif;
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+   background-color:#fceded;
+   font-family: nav;
+   
+}
+
+nav ul li a:hover {
+   background-color:#fceded;
+  color: #00ddff;
+  transition:0.3s;
+}
+
+.headlines{
+text-align:center;
+font-size:24px;
+color:rgba(0, 35, 122, 0.7);
+font-family: "Century Gothic", 'Lato', sans-serif;
+font-weight:bold;
+    margin: 10px 0;
+}
+
+
+.lastnav{
+margin-bottom:4%;
+}
+
+      @font-face{
+        font-family: toptext;
+  src: url(header.ttf);
+    }
+  
+    
+    
+.headlines{
+text-align:center;
+font-size:24px;
+color:#e482a8;
+    letter-spacing: 4px;
+font-family: toptext;
+font-weight:bold;
+    margin: 10px 0;
+}
+
+
+.lastnav{
+margin-bottom:4%;
+}
+
+
+    ::-webkit-scrollbar {
+  width: 5px;
+    height:5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff5f8;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e0e0e0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff6395;
+}
+    
+    
+.vidbar{
+width:20vw;
+ height:12vw;  
+   
+ padding:0.5%; 
+ 
+ border:none; 
+ border-radius: 5px;
+}
+
+.vidbar:hover{
+background-color:#ff75a1;
+}
+
+    
+    .sizing{
+        width:75vw; 
+        height:45vw;
+        padding:12%; 
+        padding-bottom:0%;
+        padding-top:0%;
+        border:none; 
+        border-radius: 20px;
+        margin-bottom:-1%;
+       
+    }
+   
+    
+    .sidebox{
+        height:14vw; 
+        width:83vw; 
+         background-color:#ffb3c8;  
+        border: 1px solid red; 
+        white-space: nowrap; 
+        overflow: scroll; 
+        overflow-y: hidden;
+        border-radius: 5px; 
+        margin:2%;
+        margin-left:7%;
+        margin-bottom:0%;
+        
+    }
+    
+     .animal-details {
+            
+            padding: 5px;
+            margin: 20px;
+          border: 10px double #e482a8;
+           
+         border-radius:20px;
+            background-color: #f1dce2;
+            
+        }
+    
+    .writing{
+        
+        font-size:90%;
+        margin-left: -1%;
+        text-align: center;
+        margin-bottom:-2%;
+        font-family: nav;
+    }
+
+    
+    .name{
+        margin-bottom:0%;
+        text-align: center;
+         font-size:150%;
+        font-family: nav;
+    }
+    
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Green */
+.butt {
+  border: 2px solid #e482a8;
+            
+         border-radius:20px;
+            background-color:#fff0f5;
+    text-align:center;
+font-size:100%;
+color:#e482a8;
+    letter-spacing: 4px;
+font-family: toptext;
+font-weight:bold;
+    margin-left:24vw;
+}
+
+.butt:hover {
+  background-color: #e482a8;
+  color: white;
+    border-color: #fff0f5;
+}
+
+
+.end{
+    text-decoration: none;
+width:100%;
+font-size: 15px;
+font-family:end;
+color:#8f4300;
+margin-left:0%;
+ display: block;
+    
+}
+
+    .link{
+         text-decoration: none;
+        text-align: center;
+font-size: 12px;
+font-family:end;
+color:#8f4300;
+    }
+    
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+    
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Green */
+.success {
+  border-color: #04AA6D;
+  color: green;
+}
+
+.success:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+    
+
+.end{
+text-align: center;
+font-size: 12px;
+font-family:end;
+color:#8f4300;
+    
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+    
+    .pc{
+        display: none;
+    }
+    
+    }
+/* Styles for devices with a minimum width of 1024px */
+ 
+    
+    
+    
+    
+@media (min-width: 1024px) {
+    
+    
+       
+    .parallax {
+  background-image: url('adopt-pc.jpg'); /* Replace with your image */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  height: 120vh; /* Adjust this to your needs */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-content {
+  text-align: center;
+  color: #fff;
+  font-size:200%;
+   
+}
+    
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff5f8;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e0e0e0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff6395;
+}
+    
+    
+    
+.navbar {
+  
+  background-color:#fceded;
+  width: 100%;
+  display: inline-flex;
+  margin-top: 2%; 
+  margin-bottom: 0%;
+}
+
+    
+   nav {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: -2% auto;
+       margin-left:-2%;
+       margin-top:-2%;
+  padding: 12px 0;
+  width:104vw;
+  
+}
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background-color:#fceded;
+    padding-bottom:1px;
+}
+
+nav ul li {
+  display: inline-block;
+  
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family: nav;
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 22px;
+  text-decoration: none;
+  display: block;
+  background-color:#fff2f2;
+  margin-right:-1px;
+   
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background-color: #fcd4e0;
+  color: #df6cad;
+  transition:0.7s;
+}
+
+
+
+.topheader{
+width:100%;
+height:40%;
+left:0%;
+top:0%;
+
+object-fit: cover;
+}
+    
+    
+      @font-face{
+        font-family: toptext;
+  src: url(header.ttf);
+    }
+  
+    
+
+
+
+
+.vidbar{
+width:20vw;
+ height:12vw;  
+   
+ padding:0.5%; 
+ 
+ border:none; 
+ border-radius: 5px;
+}
+
+.vidbar:hover{
+background-color:#ff75a1;
+}
+
+    
+    .sizing{
+        width:65vw; 
+        height:36vw;
+        padding:18%; 
+        padding-bottom:0%;
+        padding-top:0%;
+        border:none; 
+        border-radius: 20px;
+        margin-bottom:-1%;
+       
+    }
+   
+    
+    .sidebox{
+        height:14vw; 
+        width:74.5vw; 
+        background-color:#ffb3c8; 
+        border: 2px solid red; 
+        white-space: nowrap; 
+        overflow: scroll; 
+        overflow-y: hidden;
+        border-radius: 5px; 
+        margin:2%;
+        margin-left:13%;
+        margin-bottom:0%;
+        
+    }
+    
+     .animal-details {
+            border: 10px double #e482a8;
+            padding: 20px;
+            margin: 20px;
+         border-radius:20px;
+            background-color: #f1dce2;
+        }
+    
+    .writing{
+        
+        font-size:175%;
+        margin-left: 2vw;
+        text-align: left;
+        margin-bottom:-0.8%;
+        font-family: nav3;
+        font-weight:20;
+    }
+
+    
+    .name{
+        margin-bottom:3%;
+        text-align: center;
+         font-size:260%;
+        font-family: nav3;
+         font-weight:20;
+    }
+    
+    .btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Green */
+.butt {
+  border: 5px solid #e482a8;
+            padding: 10px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+            margin: 20px;
+         border-radius:20px;
+            background-color:#fff0f5;
+    text-align:center;
+font-size:150%;
+color:#e482a8;
+    letter-spacing: 4px;
+font-family: toptext;
+font-weight:bold;
+    margin-left:32.5vw;
+}
+
+.butt:hover {
+  background-color: #e482a8;
+  color: white;
+    border-color: #fff0f5;
+}
+
+
+.headlines{
+text-align:center;
+font-size:300%;
+color:#e482a8;
+    letter-spacing: 4px;
+font-family: toptext;
+font-weight:bold;
+}
+
+.end{
+width:100%;
+font-size: 15px;
+color: rgb(160, 160, 160);
+font-family:end;
+color:#8f4300;
+margin-left:0%;
+ 
+}
+    
+    .box{
+        margin-left:10%;
+          margin-right:10%;
+    }
+    
+    
+
+     .link{
+         text-decoration: none;
+         font-size: 15px;
+color: rgb(160, 160, 160);
+font-family:end;
+color:#8f4300;
+    }
+    
+    
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+       
+}
+    
+    .mobile{
+    display: none;
+    
+}
+    
+    
+  
+}    
+    
+
+
+</style>
+</head>
+
+
+<body>
+    
+    <section class="et-hero-tabs pc">
+   
+    
+      <nav id = "navbar">
+    <ul>
+      
+      <li>
+         <a class="tab" href="Unfinished.html">HOME</a>
+      </li>
+      <li>
+        <a class="tab" href="index.html">OUR PROJECTS</a>
+      </li>
+      <li>
+       <a class="tab" href="Unfinished.html">NEWS</a>
+      </li>
+      <li>
+         <a class="tab" href="Adopt.html">ADOPT A PET</a>
+      </li>
+      <li>
+        <a class="tab" href="Unfinished.html">CONTACT US</a>
+      </li>
+      <li>
+        <a class="tab" href="Unfinished.html">SUPPORT US</a>
+      </li>
+    </ul>
+  </nav>
+  
+  </section> 
+     
+  <section class="et-hero-tabs mobile">
+     
+      
+    <nav id = "navbar">
+  
+    <div class = "navbar">
+      
+      
+      <a class = "nav-button" href="Unfinished.html">HOME</a>
+      <a class = "menu-button">MORE</a>
+  
+    </div>
+  
+    <ul class = "dropdown-menu" id = "dropdownMenu">   
+      <li>
+        <a class="tab" href="index.html">OUR PROJECTS</a>
+      </li>
+      <li>
+       <a class="tab" href="Unfinished.html">NEWS</a>
+      </li>
+      <li>
+         <a class="tab" href="Adopt.html">ADOPT A PET</a>
+      </li>
+      <li>
+        <a class="tab" href="Unfinished.html">CONTACT US</a>
+      </li>
+      <li>
+        <a class="tab lastnav" href="Unfinished.html">SUPPORT US</a>
+      </li>
+    </ul>
+  </nav>
+     
+      
+     </section>
+    
+    
+<div class="parallax">
+    
+    
+    <div class="parallax-content">
+      
+      <p>Scroll down to Read</p>
+    </div>
+  </div>
+  
+  <div class="content">
+        
+<div class="big-container">
+    <h1 class="headlines">Pick a rescue and dm us the ID on our facebook page</h1>
+ 
+  
+     
+     <div class="big-container">
+         <div id="screen">
+<iframe class="sizing" id="2016"   src="3catsvid.mp4" title="YouTube video player"  allow="autoplay"></iframe>
+</div>
+         <div>
+
+<span  >
+<div class="sidebox" >
+
+    <a onclick="toggleIframeAndImage('screen', '3catsvid.mp4?autoplay=1&mute=1', 'sizing', 'iframe')"><img src="3catvidth.png" class = "vidbar"> </a>
+    
+<a onclick="toggleIframeAndImage('screen', '3catspic.png', 'sizing', 'img')"><img src="3catspic.png" class = "vidbar"></a>
+    
+<a onclick="toggleIframeAndImage('screen', '3catspic2.png', 'sizing', 'img')"><img src="3catspic2.png" class = "vidbar"> </a>
+    
+<a onclick="toggleIframeAndImage('screen', '3catsvid2.mp4?autoplay=1&mute=1', 'sizing', 'iframe')"><img src="3catvid2th.png" class = "vidbar"> </a>
+             
+
+
+</div >
+</span>
+
+
+
+</div>
+
+     </div>
+     
+     
+     <div class="box">
+     
+     <div class="animal-details">
+    <h2 class="name">Animal Name: Carrot (one of them)</h2>
+    <p class="writing"><strong>Species:</strong> Cat</p>
+    <p class="writing"><strong>Breed:</strong> Unknown</p>
+    <p class="writing"><strong>Age:</strong> 1.5 months</p>
+    <p class="writing"><strong>Color:</strong> White and Orange</p>
+    <p class="writing"><strong>Potty trained:</strong> Yes</p>
+    <p class="writing"><strong>Vaccinated:</strong> No</p>
+    <p class="writing"><strong>Neutered/Spayed:</strong> No</p>
+    <p class="writing"><strong>Notes:</strong> They are quite shy as of yet but after staying with them for a couple of days they will start showing more playful personality. They can be adopted individually or in pairs or all three.</p><br><br>
+         <a href="" class="btn butt">Adopt</a>
+         <br><br>
+</div>
+    
+
+     
+      
+     
+     
+     
+  
+      
+      
+     
+     </div>
+
+
+<br><br>
+<hr class="end">
+<pre class = "end pc">
+
+                                          <a>Our Email: nishkritifoundation22@gmail.com</a>                                                             <a>Our BKash no: +8801708905024</a>
+                                          <a>Our Contact No: 01722887641</a>                                                                                    <a class="link" href="https://www.instagram.com/nishkritifoundation/">Instagram: https://www.instagram.com/nishkritifoundation/</a>
+  
+  </div>
+  
+  
+  
+  
+  
+  </pre>
+  
+  <div class = "end mobile">
+  
+  
+  
+  
+    <a>Our Email: nishkritifoundation22@gmail.com</a> <br>
+    <a>Our BKash no: +8801708905024</a> <br>
+    <a>Our Contact No: 01722887641</a> <br>                                             
+     <a class="link" href="https://www.instagram.com/nishkritifoundation/">Instagram: https://www.instagram.com/nishkritifoundation/</a>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+
+
+
+  
+
+
+
+<script>
+      const menuButton = document.querySelector(".menu-button");
+  const dropdownMenu = document.getElementById("dropdownMenu");
+
+  menuButton.addEventListener("click", () => {
+  dropdownMenu.classList.toggle("open");
+});   
+
+
+const navbar = document.getElementById("navbar");
+const banner = document.getElementById("banner");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset >= banner.offsetHeight) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+});
+    
+    
+    
+     function toggleIframeAndImage(containerId, contentUrl, newClass, changeTo) {
+  // Get the container element where you want to toggle the content
+  const container = document.getElementById(containerId);
+
+  // Check if the container exists
+  if (!container) {
+    console.error(`Container with id "${containerId}" not found.`);
+    return;
+  }
+
+  // Check if the container already has an iframe or an image
+  const currentContent = container.querySelector('iframe, img');
+
+  // Create a new element based on the contentUrl
+  let newContent;
+  if (changeTo === 'iframe') {
+    newContent = document.createElement('iframe');
+    newContent.setAttribute('src', contentUrl);
+  } else if (changeTo === 'img') {
+    newContent = document.createElement('img');
+    newContent.setAttribute('src', contentUrl);
+  } else {
+    console.error(`Invalid value for the "changeTo" parameter: "${changeTo}". It should be "iframe" or "img".`);
+    return;
+  }
+
+  // Set the class for the new content
+  if (newClass) {
+    newContent.className = newClass;
+  }
+
+  // Replace the current content with the new content
+  container.innerHTML = '';
+  container.appendChild(newContent);
+}
+
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    </script>
+
+    
+    
+    
+    
+</body>
+</html>
+
+
+
