@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nishkriti-Blogs</title>
+  <link rel="icon" type="image/x-icon" href="Logo.png">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="scripts.js"></script>
+<style>
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x:hidden;
+     background-color:#C3E9FF;
+}
+
+
+@font-face{
+        font-family: nav;
+  src: url(nav2.ttf);
+    }
+
+ 
+@font-face{
+        font-family: filter;
+  src: url(filter.ttf);
+    }
+
+@font-face{
+        font-family: end;
+  src: url(butt.otf);
+    }
+    
+    
+    @font-face{
+        font-family: toptext;
+  src: url(header.ttf);
+    }
+  
+
+.end{
+
+font-size: 15px;
+font-color: rgb(160, 160, 160);
+font-family:Courier New;
+color:#8f4300;
+}
+
+@media (max-width: 768px) {
+    
+         
+    .parallax {
+  background-image: url('blogheader.png'); /* Replace with your image */
+  background-attachment: fixed;
+  background-position: 15% 10%;
+  background-repeat: no-repeat;
+  background-size: 100vw 30vh;
+  height: 38vh; /* Adjust this to your needs */
+  display: flex;
+  justify-content: center;
+  align-items: bottom;
+}
+
+.parallax-content {
+  text-align: center;
+  color: #fff;
+  font-size:200%;
+    display:none;
+}
+    
+    
+    
+    
+  .topheader{
+width:100%;
+left:0%;
+top:0%;
+object-fit: cover;
+      margin-bottom:-2%;
+}
+
+.et-hero-tabs .mobile {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+     background-color:#fceded;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+    background-color:#C3E9FF;
+  width: 100%;
+  display: inline-flex;
+  margin-top: 0%; 
+  margin-bottom: 0%;
+}
+
+.navbar a {
+  width: 50%;
+  text-align:center;
+  padding: 2.3vh;
+  font-family: nav;
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+   background-color:#C3E9FF;
+  border-right: rgba(0, 35, 122, 0.5);
+}
+
+.navbar a:hover {
+  background-color: #8cd3fa;
+  color:#2c78db;
+  transition:0.7s;
+  
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.dropdown-menu.open {
+  display: block;
+    margin-top:6%;
+}
+
+nav {
+  
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: -2% auto;
+  padding:  0;
+  width:100%;
+
+}
+
+nav ul {
+  text-align: center;
+    background-color:#fceded;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+ background-color:#fceded;
+    padding: 0;
+    margin: 0;
+}
+
+
+nav ul li {
+  display: block;
+  margin: 0;
+}
+
+nav ul li a {
+  padding: 12px;
+  font-family: "Century Gothic", 'Lato', sans-serif;
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+   background-color:#C3E9FF;
+   font-family: nav;
+   
+}
+
+nav ul li a:hover {
+  background-color: #8cd3fa;
+  color: 2c78db;
+  transition:0.3s;
+}
+
+
+
+
+.lastnav{
+margin-bottom:4%;
+}
+
+      @font-face{
+        font-family: toptext;
+  src: url(header.ttf);
+    }
+  
+    
+    
+.headlines{
+text-align:center;
+font-size:24px;
+color:#5fc5ff;
+    letter-spacing: 4px;
+font-family: toptext;
+font-weight:bold;
+    margin: 10px 0;
+}
+
+
+.lastnav{
+margin-bottom:4%;
+}
+
+
+   .gallery {
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:97%;
+    margin-left:2%;
+  }
+
+ .gallery-item {
+    margin: 17px;
+     margin-left:0px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+           transition: transform 0.5s, filter 0.5s ;
+     filter: grayscale(30%);
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+    
+    .gallery-item:hover{
+        filter: grayscale(0%);
+        transform: scale(1.06);
+        z-index:10;
+    }
+    
+    
+    .column{
+        flex: 33.33%;
+  max-width: 33.33%;
+    }
+    
+ 
+      
+ 
+   
+    
+    
+    .image-text {
+    position: absolute;
+      top: 90%;
+        left:50%;
+    text-align:center;
+        width:100%;
+    transform: translate(-50%, -50%);
+  background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 4%, rgba(255,255,255,0.4963235294117647) 66%, rgba(255,255,255,0) 100%);
+    padding: 10px;
+        padding-top:25px;
+        padding-bottom:37px;
+    z-index: 1;
+        font-size:30%;
+       opacity:100%;
+           transition:opacity 0.5s;
+        font-family: "Lucida Handwriting";
+            color:black;
+  }
+    
+     .gallery-item:hover .image-text{
+        opacity:100%;
+         
+    }
+  
+    
+    
+
+
+
+.end{
+    text-decoration: none;
+width:100%;
+font-size: 15px;
+font-family:end;
+color:#8f4300;
+margin-left:0%;
+ display: block;
+    
+}
+
+   
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+    
+
+    
+
+.end{
+text-align: center;
+font-size: 12px;
+font-family:end;
+color:#8f4300;
+    
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+    
+    .pc{
+        display: none;
+    }
+    
+    }
+/* Styles for devices with a minimum width of 1024px */
+ 
+    
+    
+    
+    
+@media (min-width: 1024px) {
+    
+    
+       
+    .parallax {
+  background-image: url('blogheader.png'); /* Replace with your image */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  height: 120vh; /* Adjust this to your needs */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-content {
+  text-align: center;
+  color: #fff;
+  font-size:200%;
+   
+}
+    
+
+    
+    
+    
+.navbar {
+  
+ 
+  width: 100%;
+  display: inline-flex;
+  margin-top: 2%; 
+  margin-bottom: 0%;
+}
+
+    
+   nav {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: -2% auto;
+       margin-left:-2%;
+       margin-top:-2%;
+  padding: 12px 0;
+  width:104vw;
+  
+}
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background-color:#C3E9FF;
+    padding-bottom:1px;
+}
+
+nav ul li {
+  display: inline-block;
+  
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family: nav;
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 22px;
+  text-decoration: none;
+  display: block;
+  background-color:none;
+  margin-right:-1px;
+   
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background-color: #8cd3fa;
+  color:#2c78db;
+  transition:0.4s;
+}
+
+
+
+.topheader{
+width:100%;
+height:40%;
+left:0%;
+top:0%;
+
+object-fit: cover;
+}
+    
+    
+      @font-face{
+        font-family: toptext;
+  src: url(header.ttf);
+    }
+  
+    
+
+
+
+.headlines{
+text-align:center;
+font-size:300%;
+color:rgba(0, 35, 122, 0.7);
+font-family: "Century Gothic", 'Lato', sans-serif;
+font-weight:bold;
+}
+
+.gallery {
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:97%;
+    margin-left:2%;
+  }
+
+ .gallery-item {
+    margin: 17px;
+     margin-left:0px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+           transition: transform 0.5s, filter 0.5s ;
+     filter: grayscale(100%);
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+    
+    .gallery-item:hover{
+        filter: grayscale(0%);
+        transform: scale(1.06);
+        z-index:10;
+    }
+    
+    
+    .column{
+        flex: 33.33%;
+  max-width: 33.33%;
+    }
+    
+ 
+      
+ 
+   
+    
+    
+    .image-text {
+    position: absolute;
+      top: 90%;
+        left:50%;
+    text-align:center;
+        width:100%;
+    transform: translate(-50%, -50%);
+  background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 4%, rgba(255,255,255,0.4963235294117647) 66%, rgba(255,255,255,0) 100%);
+    padding: 10px;
+        padding-top:5px;
+        padding-bottom:37px;
+    z-index: 1;
+        font-size:120%;
+       opacity:0%;
+           transition:opacity 0.5s;
+        font-family: nav;
+            color:rgba(0, 35, 122, 0.6);
+        text-transform: uppercase;
+  }
+    
+     .gallery-item:hover .image-text{
+        opacity:100%;
+         
+    }
+  
+
+.headlines{
+text-align:center;
+font-size:300%;
+color:#5fc5ff;
+    letter-spacing: 4px;
+font-family: toptext;
+font-weight:bold;
+}
+
+.end{
+width:100%;
+font-size: 15px;
+color: rgb(160, 160, 160);
+font-family:end;
+color:#8f4300;
+margin-left:0%;
+ 
+}
+
+     
+    
+    
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+       
+}
+    
+    .mobile{
+    display: none;
+    
+}
+    
+    
+  
+}    
+    
+
+
+</style>
+</head>
+
+
+<body>
+    
+    <section class="et-hero-tabs pc">
+   
+    
+      <nav id = "navbar">
+    <ul>
+      
+      <li>
+         <a class="tab" href="Unfinished.html">HOME</a>
+      </li>
+      <li>
+        <a class="tab" href="index.html">OUR PROJECTS</a>
+      </li>
+      <li>
+       <a class="tab" href="Unfinished.html">BLOG</a>
+      </li>
+      <li>
+         <a class="tab" href="Adopt.html">ADOPT A PET</a>
+      </li>
+      <li>
+        <a class="tab" href="Unfinished.html">CONTACT US</a>
+      </li>
+      <li>
+        <a class="tab" href="Unfinished.html">SUPPORT US</a>
+      </li>
+    </ul>
+  </nav>
+  
+  </section> 
+     
+  <section class="et-hero-tabs mobile">
+     
+      
+    <nav id = "navbar">
+  
+    <div class = "navbar">
+      
+      
+      <a class = "nav-button" href="Unfinished.html">HOME</a>
+      <a class = "menu-button">MORE</a>
+  
+    </div>
+  
+    <ul class = "dropdown-menu" id = "dropdownMenu">   
+      <li>
+        <a class="tab" href="index.html">OUR PROJECTS</a>
+      </li>
+      <li>
+       <a class="tab" href="Unfinished.html">BLOG</a>
+      </li>
+      <li>
+         <a class="tab" href="Adopt.html">ADOPT A PET</a>
+      </li>
+      <li>
+        <a class="tab" href="Unfinished.html">CONTACT US</a>
+      </li>
+      <li>
+        <a class="tab lastnav" href="Unfinished.html">SUPPORT US</a>
+      </li>
+    </ul>
+  </nav>
+     
+      
+     </section>
+    
+    
+<div class="parallax">
+    
+    
+    <div class="parallax-content">
+      
+      <p>Scroll down to Read</p>
+    </div>
+  </div>
+  
+  <div class="content">
+        
+<h1 class="headlines">Short Stories from around the world</h1>
+
+  <div class="gallery">
+      
+      <div class="column">
+            <div class="gallery-item 1th" >
+                <a href="Story1.html">
+    <img src="storypic1.jpg" alt="Image 1" >
+                 <div class="image-text" id="1st">
+      <h2>The unspeaking victims of Dhaka's streets</h2>
+    </div>
+                 </a>   
+  </div>
+  
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      <div class="column">
+        
+ 
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="column">
+       
+        
+      </div>
+      
+      
+     
+     </div>
+     
+     </div>
+
+
+<br><br>
+<hr class="end">
+<pre class = "end pc">
+
+                                          <a>Our Email: nishkritifoundation22@gmail.com</a>                                                             <a>Our BKash no: +8801708905024</a>
+                                          <a>Our Contact No: 01722887641</a>                                                                                    <a class="link" href="https://www.instagram.com/nishkritifoundation/">Instagram: https://www.instagram.com/nishkritifoundation/</a>
+  
+  </div>
+  
+  
+  
+  
+  
+  </pre>
+  
+  <div class = "end mobile">
+  
+  
+  
+  
+    <a>Our Email: nishkritifoundation22@gmail.com</a> <br>
+    <a>Our BKash no: +8801708905024</a> <br>
+    <a>Our Contact No: 01722887641</a> <br>                                             
+     <a class="link" href="https://www.instagram.com/nishkritifoundation/">Instagram: https://www.instagram.com/nishkritifoundation/</a>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+
+
+
+  
+
+
+
+<script>
+      const menuButton = document.querySelector(".menu-button");
+  const dropdownMenu = document.getElementById("dropdownMenu");
+
+  menuButton.addEventListener("click", () => {
+  dropdownMenu.classList.toggle("open");
+});   
+
+
+const navbar = document.getElementById("navbar");
+const banner = document.getElementById("banner");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset >= banner.offsetHeight) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+});
+    
+    
+    
+    
+    
+    
+    
+    
+      document.addEventListener("DOMContentLoaded", function () {
+    var allShowRadio = document.querySelector('.allshow input[name="radio"]');
+    var catShowRadio = document.querySelector('.catshow input[name="radio"]');
+    var dogShowRadio = document.querySelector('.dogshow input[name="radio"]');
+    
+    var catImages = document.querySelectorAll('.cat');
+    var dogImages = document.querySelectorAll('.dog');
+    
+    function updateImageVisibility() {
+        if (allShowRadio.checked) {
+            catImages.forEach(function (image) {
+                image.style.display = 'inline-block';
+            });
+            dogImages.forEach(function (image) {
+                image.style.display = 'inline-block';
+            });
+        } else if (catShowRadio.checked) {
+            catImages.forEach(function (image) {
+                image.style.display = 'inline-block';
+            });
+            dogImages.forEach(function (image) {
+                image.style.display = 'none';
+            });
+        } else if (dogShowRadio.checked) {
+            catImages.forEach(function (image) {
+                image.style.display = 'none';
+            });
+            dogImages.forEach(function (image) {
+                image.style.display = 'inline-block';
+            });
+        }
+    }
+    
+    allShowRadio.addEventListener('change', updateImageVisibility);
+    catShowRadio.addEventListener('change', updateImageVisibility);
+    dogShowRadio.addEventListener('change', updateImageVisibility);
+    
+    // Initialize image visibility based on initial radio button state
+    updateImageVisibility();
+});
+    
+    
+    
+    
+    </script>
+
+    
+    
+    
+    
+</body>
+</html>
+
+
+
